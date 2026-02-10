@@ -1,0 +1,18 @@
+profile single_screen {
+    output eDP-1 enable
+}
+
+profile external_monitor_only {
+    output eDP-1 disable
+    output HDMI-A-1 enable
+}
+
+profile builtin_monitor_only {
+    output eDP-1 enable
+    output HDMI-A-1 disable
+}
+
+profile extend {
+    output HDMI-A-1 enable position 1920,0
+    output eDP-1 enable position 0,0
+}

@@ -31,12 +31,17 @@
 
   # Packages that should be installed to the user profile.
   imports = [
-    inputs.zen-browser.homeModules.beta
+    # inputs.zen-browser.homeModules.beta
+    ./homeModules/zen-browser.nix
+    ./homeModules/legacy-dotfiles.nix
   ];
 
   home.packages = with pkgs; [
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
+
+    # Zen browser
+    # inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     neofetch
     # nnn # terminal file manager
@@ -151,7 +156,7 @@
     # };
   };
 
-  programs.zen-browser.enable = true;
+  # programs.zen-browser.enable = true;
 
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage

@@ -10,9 +10,8 @@
     };
 
     zen-browser = {
-      url = "github:0xc000022070/zen-browser-flake";
+      url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
-      inputs.home-manager.follows = "home-manager";
     };
   };
 
@@ -23,15 +22,15 @@
       specialArgs = inputs;
       modules = [
         ./configuration.nix
-	home-manager.nixosModules.home-manager
-	{
-	  home-manager.extraSpecialArgs = {inherit inputs self;};
+        # ./homeModules/zen-browser.nix
+        home-manager.nixosModules.home-manager
+	    {
+	      home-manager.extraSpecialArgs = {inherit inputs self;};
           home-manager.useGlobalPkgs = true;
-	  home-manager.useUserPackages = true;
-	  home-manager.users.t0ast = import ./home.nix;
-	}
+	      home-manager.useUserPackages = true;
+	      home-manager.users.t0ast = import ./home.nix;
+	    }
       ];
     };
-
   };
 }

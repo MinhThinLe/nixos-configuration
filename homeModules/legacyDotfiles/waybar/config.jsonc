@@ -1,0 +1,120 @@
+{
+    "spacing": 0,
+    // "height": 52,
+    "reload_style_on_change": true,
+    "modules-left": [
+        "niri/workspaces",
+        // "sway/workspaces",
+        // "sway/mode",
+        "wlr/taskbar",
+        "idle_inhibitor"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "group/sensors",
+        "tray"
+    ],
+
+    "wlr/taskbar": {
+        "on-click": "activate"
+    },
+
+    "group/sensors": {
+        "orientation": "horizontal",
+        "modules": [
+            "cpu",
+            "backlight",
+            "memory",
+            "temperature",
+            "battery",
+            "pulseaudio",
+            "bluetooth"
+        ]
+    },
+
+    "cpu": {
+        "interval": 1,
+        "format": "󰍛 {usage}%",
+        "max-length": 10
+    },
+
+    "niri/workspaces": {
+        "format": "{index}"
+    },
+
+    "clock": {
+        "format": "{:%R %A, %B %d, %Y}",
+        "timezone": "Asia/Ho_Chi_Minh",
+        // "locale": "fr_FR.UTF8"
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": " {percent}%",
+        "format-icons": ["", ""]
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "default": ["", ""]
+        },
+        "scroll-step": 1,
+        "on-click": "pwvucontrol"
+    },
+
+    "battery": {
+        "interval": 1,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂀", "󰂁", "󰁹"],
+        "format-charging": "󰂄 {capacity}%",
+        "max-length": 25,
+        "tooltip-format": "Cycles: {cycles}\nBattery Health: {health}%\n{timeTo}"
+    },
+
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+
+    "temperature": {
+        "thermal-zone": 8,
+        "critical-threshold": 70,
+        "format": " {temperatureC}°C",
+        "interval": 1
+    },
+
+    "memory": {
+        "interval": 1,
+        "format": " {}%",
+        "max-length": 10
+    },
+
+    "sway/mode": {
+        "format": "Mode: {}"
+    },
+
+    "bluetooth": {
+        "format": "󰂯 {status}",
+        "format-disabled": "󰂲",
+        "format-connected": " {device_battery_percentage}%"
+    },
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "deactivated": "",
+            "activated": ""
+        }
+    }
+}

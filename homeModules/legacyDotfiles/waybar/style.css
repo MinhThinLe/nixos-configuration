@@ -1,0 +1,143 @@
+@define-color background #282828;
+@define-color red #CC241D;
+@define-color green #B8BB26;
+@define-color yellow #D79921;
+@define-color blue #458588;
+@define-color purple #B16286;
+@define-color aqua #689D6A;
+@define-color gray #928374;
+@define-color orange #D65D0E;
+@define-color foreground #D5C4A1;
+* {
+    border: none;
+    min-height: 0;
+    font-family: "JetbrainsMonoNL Nerd Font Propo";
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0;
+    border-radius: 4px;
+}
+
+window#waybar {
+    background: @background;
+    border: 2px solid @gray;
+}
+
+tooltip {
+    background-color: @background;
+    border: 2px solid @gray;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+#clock,
+#tray,
+#tray menu,
+#idle_inhibitor,
+#mode,
+#sensors {
+    border: 2px solid @gray;
+    margin: 6px;
+    padding: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#taskbar {
+    border: 2px solid @gray;
+    border-bottom: none;
+    margin: 6px;
+}
+
+#taskbar button {
+    padding: 8px;
+    border-bottom: 2px solid @gray;
+    border-radius: 0px;
+}
+
+#taskbar button.active {
+    border-bottom: 2px solid @green;
+}
+
+#taskbar.empty {
+    color: transparent;
+    background: transparent;
+    border: none;
+    margin: 0px;
+}
+
+/* All the members in group/sensors except the last */
+#memory,
+#backlight,
+#cpu,
+#battery,
+#temperature,
+#pulseaudio {
+    padding: 1px 10px 0px 0px;
+    border-right: 2px solid @gray;
+    border-radius: 0px;
+}
+
+#sensors * {
+    margin: 3px 3px 3px 8px;
+}
+
+#cpu {
+    margin-left: 0px;
+}
+#bluetooth {
+    margin-right: 0px;
+}
+
+#workspaces {
+    margin: 6px;
+    border: 2px solid @gray;
+    border-bottom: none;
+    border-top: none;
+}
+
+.modules-left #workspaces button {
+    all: initial;
+/*    min-width: 0; */
+    box-shadow: inset 0 -3px transparent;
+    padding: 5px 8px 5px 5px;
+    margin: 0px;
+    border-radius: 0px;
+    border-bottom: 2px solid @gray;
+    border-top: 2px solid @gray;
+}
+
+.modules-left #workspaces button.active {
+    padding: 5px 10px;
+}
+
+#workspaces button.focused {
+    color: @green;
+    border-bottom: 2px solid @green;
+    border-radius: 0px;
+}
+
+#workspaces button:hover {
+    border-top: 2px solid @green;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+}
+
+#cpu.critical,
+#memory.critical,
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+    color: @red;
+}
+
+#tray label {
+    margin: 2px;
+    padding: 2px;
+}
+
+#tray item:hover {
+    color: @red;
+}
