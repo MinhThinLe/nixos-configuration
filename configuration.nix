@@ -16,6 +16,11 @@
 
     boot.kernelPackages = pkgs.linuxPackages_latest;
 
+    boot.extraModprobeConfig = ''
+        options hid_apple fnmode=2
+    '';
+    boot.kernelModules = [ "hid_apple" ];
+
     networking.hostName = "t0ast-nix";
     networking.networkmanager.enable = true;
     networking.firewall = rec {
@@ -116,6 +121,7 @@
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
     services.gnome.gnome-keyring.enable = true;
+
 
     system.stateVersion = "25.11";
 }
