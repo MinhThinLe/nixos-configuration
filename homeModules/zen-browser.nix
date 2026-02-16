@@ -17,6 +17,11 @@ let
     # Check these out at about:config
     "extensions.autoDisableScopes" = 0;
     "extensions.pocket.enabled" = false;
+    "browser.aboutConfig.showWarning" = false;
+    "sidebar.visibility" = "hide-sidebar";
+    "zen.view.compact.enable-at-startup" = true;
+    "zen.view.compact.hide-taskbar" = false;
+    "zen.view.compact.hide-toolbar" = true;
     # ...
   };
 
@@ -25,6 +30,13 @@ let
     # the short ID in the url (like https://addons.mozilla.org/en-US/firefox/addon/!SHORT_ID!/)
     # Then go to https://addons.mozilla.org/api/v5/addons/addon/!SHORT_ID!/ to get the guid
     (extension "ublock-origin" "uBlock0@raymondhill.net")
+    (extension "bitwarden-password-manager" "{446900e4-71c2-419f-a6a7-df9c091e268b}")
+    (extension "vimium-ff" "{d7742d87-e61d-4b78-b8a1-b469842139fa}")
+    (extension "facebook-container" "@contain-facebook")
+    (extension "clearurls" "{74145f27-f039-47ce-a470-a662b129930a}")
+    (extension "darkreader" "addons@darkreader.org")
+    (extension "decentraleyes" "jid1-BoFifL9Vbdl2zQ@jetpack")
+    (extension "privacy-badger17" "jid1-MnnxcxisBPnSXQ@jetpack")
     # ...
   ];
 
