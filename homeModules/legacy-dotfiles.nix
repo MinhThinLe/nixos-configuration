@@ -15,4 +15,14 @@
         recursive = true;
         executable = true;
     };
+
+    home.file.".zshrc" = {
+        source = ./legacyDotfiles/.zshrc;
+    };
+
+    home.file.".zprofile".text = ''
+    if [ -z "$WAYLAND_DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ] ; then
+        exec niri-session
+    fi
+    '';
 }

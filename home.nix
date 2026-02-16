@@ -19,30 +19,28 @@
         fcitx5-gtk
         fluent-icon-theme
         git
-        gruvbox-dark-gtk
         hypridle
         hyprlock
         kanshi
-        nemo
-        nemo-fileroller
         kdePackages.fcitx5-configtool
         kdePackages.fcitx5-qt
         kdePackages.fcitx5-unikey
-        kdePackages.qt6ct
-        kdePackages.qtstyleplugin-kvantum
         mako
+        nemo
+        nemo-fileroller
         networkmanager_dmenu
-        nwg-look
         pwvucontrol
         ripgrep
         rofi
         rofi-calc
+        starship
         swaybg
         ungoogled-chromium
         waybar
         wl-mirror
         yazi
         zathura
+        zoxide
     ];
 
     programs.foot = {
@@ -74,6 +72,6 @@
     };
 
     services.kdeconnect.enable = true;
-    
+
     home.stateVersion = "25.11";
 }

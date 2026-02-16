@@ -67,6 +67,7 @@
         description = "t0ast";
         extraGroups = [ "networkmanager" "wheel" ];
         packages = with pkgs; [];
+        shell = pkgs.zsh;
     };
 
     nixpkgs.config.allowUnfree = true;
@@ -96,6 +97,12 @@
         defaultEditor = true;
         viAlias = true;
         vimAlias = true;
+    };
+
+    programs.zsh = {
+        enable = true;
+        syntaxHighlighting.enable = true;
+        autosuggestions.enable = true;
     };
 
     programs.foot.theme = "gruvbox-dark";
