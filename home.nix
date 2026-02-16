@@ -7,7 +7,6 @@
     imports = [
         ./homeModules/zen-browser.nix
         ./homeModules/legacy-dotfiles.nix
-        ./homeModules/fcitx5.nix
     ];
 
     home.packages = with pkgs; [
@@ -41,9 +40,6 @@
     programs.foot = {
         enable = true;
         server.enable = true;
-        settings = {
-            font = "JetBrains Mono";
-        };
     };
 
     programs.git = {
