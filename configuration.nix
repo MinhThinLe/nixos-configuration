@@ -73,6 +73,9 @@
 
     environment.systemPackages = with pkgs; [
         xwayland-satellite
+        zsh
+        niri
+        neovim
     ];
 
     fonts.packages = with pkgs; [
@@ -90,11 +93,11 @@
     };
 
     programs.neovim = {
-        enable = true;
         defaultEditor = true;
+        viAlias = true;
+        vimAlias = true;
     };
 
-    programs.niri.enable = true;
     programs.foot.theme = "gruvbox-dark";
 
     xdg.portal = {
@@ -127,7 +130,7 @@
     hardware.graphics = {
         enable = true;
         extraPackages = with pkgs; [
-            pkgs.mesa.drivers
+            pkgs.mesa
         ];
     };
 
