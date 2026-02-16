@@ -282,6 +282,13 @@ hotkey-overlay {
     skip-at-startup
 }
 
+cursor {
+    xcursor-theme "Capitaine Cursors (Gruvbox) - White"
+    xcursor-size 24
+
+    hide-when-typing
+}
+
 prefer-no-csd
 
 screenshot-path "~/Pictures/Screenshots/%Y-%m-%d_%H-%M-%S.png"
