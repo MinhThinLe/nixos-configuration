@@ -44,6 +44,16 @@
         # LC_TIME = "en_US";
     };
 
+    i18n.inputMethod = {
+        enable = true;
+        type = "fcitx5";
+        fcitx5.waylandFrontend = true;
+        fcitx5.addons = with pkgs; [
+            kdePackages.fcitx5-unikey 
+            kdePackages.fcitx5-configtool
+        ];
+    };
+
     services.getty.autologinUser = "t0ast";
 
     services.xserver.xkb = {
