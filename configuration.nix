@@ -105,8 +105,6 @@
         autosuggestions.enable = true;
     };
 
-    programs.foot.theme = "gruvbox-dark";
-
     xdg.portal = {
       enable = true;
       extraPortals = with pkgs; [
