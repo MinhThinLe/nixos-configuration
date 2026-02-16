@@ -122,6 +122,14 @@
 
     services.gnome.gnome-keyring.enable = true;
 
+    services.xserver.videoDrivers = [ "modesetting" ];
+
+    hardware.graphics = {
+        enable = true;
+        extraPackages = with pkgs; [
+            pkgs.mesa.drivers
+        ];
+    };
 
     system.stateVersion = "25.11";
 }
