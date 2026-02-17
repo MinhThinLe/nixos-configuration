@@ -21,4 +21,14 @@
             name = "Noto Color Emoji";
         };
     };
+
+    stylix.icons = {
+        enable = true;
+        package = pkgs.fluent-icon-theme;
+        light = "Fluent-dark";
+        dark = "Fluent-light";
+    };
+
+    stylix.targets.plymouth.enable = false;
+    stylix.targets.plymouth.colors.enable = true;
 }

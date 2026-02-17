@@ -15,13 +15,31 @@
 
     boot.kernelPackages = pkgs.linuxPackages_latest;
 
-    boot.extraModprobeConfig = ''
-        options hid_apple fnmode=2
-    '';
-    boot.kernelModules = [ "hid_apple" ];
+    boot = {
+        extraModprobeConfig = ''
+            options hid_apple fnmode=2
+        '';
+        kernelModules = [ "hid_apple" ];
+    };
+
+    boot = {
+        plymouth = {
+            enable = true;
+            theme = "bgrt";
+        };
+        consoleLogLevel = 3;
+        initrd.verbose = false;
+        kernelParams = [
+            "quiet"
+            "udev.log_level=3"
+            "systemd.show_status=auto"
+        ];
+        loader.timeout = 0;
+    };
 
     networking.hostName = "t0ast-nix";
     networking.networkmanager.enable = true;
+    # Poking a hole in the firewall for kdeconnect
     networking.firewall = rec {
         allowedTCPPortRanges = [
             {
