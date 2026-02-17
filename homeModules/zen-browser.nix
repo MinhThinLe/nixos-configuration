@@ -1,4 +1,9 @@
-{ inputs, pkgs, stylix, ... }:
+{
+    inputs,
+    pkgs,
+    stylix,
+    ...
+}:
 {
     programs.zen-browser.enable = true;
     programs.zen-browser.policies = {
@@ -23,27 +28,25 @@
     programs.zen-browser.profiles."default" = {
         id = 0;
         isDefault = true;
-        extensions.packages = 
-            with inputs.firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
-                bitwarden
-                clearurls
-                decentraleyes
-                facebook-container
-                privacy-badger
-                ublock-origin
-                vimium
-            ];
+        extensions.packages = with inputs.firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
+            bitwarden
+            clearurls
+            decentraleyes
+            facebook-container
+            privacy-badger
+            ublock-origin
+            vimium
+        ];
     };
-    
+
     programs.zen-browser.profiles."University" = {
         id = 1;
         isDefault = false;
-        extensions.packages = 
-            with inputs.firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
-                ublock-origin
-                bitwarden
-                vimium
-            ];
+        extensions.packages = with inputs.firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
+            ublock-origin
+            bitwarden
+            vimium
+        ];
     };
 
     programs.zen-browser.profiles."default".settings = {
@@ -59,5 +62,8 @@
         "zen.view.use-single-toolbar" = false;
     };
 
-    stylix.targets.zen-browser.profileNames = [ "default" "University" ];
+    stylix.targets.zen-browser.profileNames = [
+        "default"
+        "University"
+    ];
 }
