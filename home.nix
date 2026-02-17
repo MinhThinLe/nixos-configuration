@@ -7,6 +7,7 @@
     imports = [
         ./homeModules/zen-browser.nix
         ./homeModules/legacy-dotfiles.nix
+        ./homeModules/foot.nix
     ];
 
     home.packages = with pkgs; [
@@ -36,11 +37,6 @@
         zathura
         zoxide
     ];
-
-    programs.foot = {
-        enable = true;
-        server.enable = true;
-    };
 
     programs.git = {
         enable = true;
