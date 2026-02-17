@@ -13,6 +13,21 @@
             main = {
                 font = "JetBrainsMonoNL NFP:size=12";
                 include = "${foot-theme}";
+                box-drawings-uses-font-glyphs = "yes";
+            };
+            cursor = {
+                style = "beam";
+            };
+            key-bindings = {
+                scrollback-up-line = "Control+k";
+                scrollback-down-line = "Control+j";
+                search-start = "Control+Shift+s";
+                font-increase = "Control+plus Control+equal Control+KP_Add";
+                font-decrease = "Control+minus Control+KP_Subtract";
+            };
+            search-bindings = {
+                find-next = "Control+n";
+                find-prev = "Control+Shift+n";
             };
         };
     };
