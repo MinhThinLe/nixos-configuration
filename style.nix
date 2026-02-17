@@ -9,4 +9,15 @@
     };
 
     stylix.polarity = "dark";
+
+    stylix.fonts = {
+        monospace = {
+            package = pkgs.nerd-fonts.jetbrains-mono;
+            name = "JetBrainsMonoNL NFP";
+        };
+        emoji = {
+            package = pkgs.noto-fonts-color-emoji;
+            name = "Noto Color Emoji";
+        };
+    };
 }

@@ -7,7 +7,6 @@
 {
     imports = [
         /etc/nixos/hardware-configuration.nix
-        ./style.nix
     ];
 
     # Bootloader.
@@ -94,7 +93,6 @@
         noto-fonts
         noto-fonts-cjk-sans
         noto-fonts-color-emoji
-        nerd-fonts.jetbrains-mono
     ];
 
     environment.variables = {

@@ -275,7 +275,7 @@ spawn-at-startup "waybar"
 spawn-at-startup "kanshi"
 spawn-at-startup "nm-applet"
 spawn-at-startup "hypridle"
-spawn-sh-at-startup "swaybg -o '*' -i ~/.config/sway/wallpapers/scenery.jpg -m fill"
+spawn-sh-at-startup "swaybg -o '*' -i ~/.config/wallpapers/scenery.jpg -m fill"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
