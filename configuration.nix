@@ -6,7 +6,7 @@
 
 {
     imports = [
-        /etc/nixos/hardware-configuration.nix
+        ./hosts/laptop/hardware-configuration.nix
     ];
 
     # Bootloader.
@@ -194,6 +194,8 @@
         "nix-command"
         "flakes"
     ];
+
+    nix.nixPath = [ "/home/t0ast/nixos-configuration" ];
 
     services.xserver.videoDrivers = [ "modesetting" ];
 
