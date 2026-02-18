@@ -66,4 +66,6 @@
         "default"
         "University"
     ];
+    
+    programs.zen-browser.suppressXdgMigrationWarning = true;
 }
