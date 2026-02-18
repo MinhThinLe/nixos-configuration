@@ -97,7 +97,6 @@
     services.gvfs.enable = true;
 
     services.gnome.gnome-keyring.enable = true;
-    services.xserver.videoDrivers = [ "modesetting" ];
     
     services.tlp = {
         enable = true;
@@ -196,11 +195,19 @@
         "flakes"
     ];
 
+    services.xserver.videoDrivers = [ "modesetting" ];
+
     hardware.graphics = {
         enable = true;
         extraPackages = with pkgs; [
+            intel-media-driver
+            vpl-gpu-rt
             pkgs.mesa
         ];
+    };
+
+    environment.sessionVariables = {
+        LIBVA_DRIVER_NAME = "iHD";
     };
 
     system.stateVersion = "25.11";
