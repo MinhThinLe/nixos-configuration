@@ -22,7 +22,6 @@
         btop
         eza
         fastfetch
-        fluent-icon-theme
         git
         hypridle
         hyprlock
