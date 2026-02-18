@@ -25,8 +25,8 @@
     stylix.icons = {
         enable = true;
         package = pkgs.fluent-icon-theme;
-        light = "Fluent-dark";
-        dark = "Fluent-light";
+        light = "Fluent";
+        dark = "Fluent";
     };
 
     stylix.targets.plymouth.enable = false;
