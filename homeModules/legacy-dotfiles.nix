@@ -1,4 +1,4 @@
-{ home, config, ... }:
+{ config, ... }:
 {
     home.file."${config.xdg.configHome}" = {
         source = ./legacyDotfiles;

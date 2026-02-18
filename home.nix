@@ -1,6 +1,5 @@
 {
     inputs,
-    config,
     pkgs,
     ...
 }:
@@ -20,9 +19,12 @@
         bat
         bluetui
         btop
+        cargo
         eza
         fastfetch
         file-roller
+        gcc
+        gimp
         git
         hypridle
         hyprlock

@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
     imports = [
@@ -130,7 +130,7 @@
             "networkmanager"
             "wheel"
         ];
-        packages = with pkgs; [ ];
+        # packages = with pkgs; [ ];
         shell = pkgs.zsh;
     };
 
