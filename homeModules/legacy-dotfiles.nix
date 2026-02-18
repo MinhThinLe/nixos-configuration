@@ -25,4 +25,10 @@
             exec niri-session -l
         fi
     '';
+
+    # Stupid way to add a script
+    home.file."${config.xdg.dataHome}/nvim/mason/bin/prettify-table" = {
+        text = "tr -s \" \" | column -t -s '|' -o '|'";
+        executable = true;
+    };
 }
