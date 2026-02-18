@@ -29,6 +29,7 @@
         kanshi
         mako
         nautilus
+        networkmanagerapplet
         networkmanager_dmenu
         pwvucontrol
         ripgrep
