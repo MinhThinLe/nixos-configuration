@@ -96,6 +96,34 @@
 
     services.gvfs.enable = true;
 
+    services.gnome.gnome-keyring.enable = true;
+    services.xserver.videoDrivers = [ "modesetting" ];
+    
+    services.tlp = {
+        enable = true;
+        pd.enable = true;
+        settings = {
+            CPU_ENERGY_PERF_POLICY_ON_AC = "performance";
+            CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
+            CPU_ENERGY_PERF_POLICY_ON_SAV = "power";
+
+            PLATFORM_PROFILE_ON_AC = "performance";
+            PLATFORM_PROFILE_ON_BAT = "low-power";
+            PLATFORM_PROFILE_ON_SAV = "low-power";
+
+            CPU_BOOST_ON_AC = 1;
+            CPU_BOOST_ON_BAT = 0;
+            CPU_BOOST_ON_SAV = 0;
+
+            CPU_HWP_DYN_BOOST_ON_AC = 1;
+            CPU_HWP_DYN_BOOST_ON_BAT = 0;
+            CPU_HWP_DYN_BOOST_ON_SAV = 0;
+
+            WIFI_PWR_ON_AC = "on";
+            WIFI_PWR_ON_BAT = "on";
+        };
+    };
+
     users.users.t0ast = {
         isNormalUser = true;
         description = "t0ast";
@@ -111,9 +139,10 @@
 
     environment.systemPackages = with pkgs; [
         xwayland-satellite
-        zsh
         niri
         neovim
+        tlp
+        tlp-pd
     ];
 
     fonts.packages = with pkgs; [
@@ -166,10 +195,6 @@
         "nix-command"
         "flakes"
     ];
-
-    services.gnome.gnome-keyring.enable = true;
-
-    services.xserver.videoDrivers = [ "modesetting" ];
 
     hardware.graphics = {
         enable = true;
