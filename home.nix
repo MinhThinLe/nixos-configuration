@@ -22,13 +22,13 @@
         btop
         eza
         fastfetch
+        file-roller
         git
         hypridle
         hyprlock
         kanshi
         mako
-        nemo
-        nemo-fileroller
+        nautilus
         networkmanager_dmenu
         pwvucontrol
         ripgrep

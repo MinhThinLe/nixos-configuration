@@ -94,6 +94,8 @@
 
     services.libinput.enable = true;
 
+    services.gvfs.enable = true;
+
     users.users.t0ast = {
         isNormalUser = true;
         description = "t0ast";
