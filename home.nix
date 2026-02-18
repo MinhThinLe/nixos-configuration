@@ -10,7 +10,7 @@
     home.homeDirectory = "/home/t0ast";
 
     imports = [
-        inputs.zen-browser.homeModules.twilight-official
+        inputs.zen-browser.homeModules.beta
         ./homeModules/zen-browser.nix
         ./homeModules/legacy-dotfiles.nix
         ./homeModules/foot.nix
@@ -68,7 +68,8 @@
         zen-browser-uni = {
             name = "Zen Browser (University profile)";
             genericName = "Web browser";
-            exec = "zen-twilight -P University";
+            exec = "zen-beta -P University";
+            icon = "zen-browser";
             terminal = false;
             categories = [
                 "Network"
