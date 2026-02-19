@@ -208,6 +208,8 @@
         ];
     };
 
+    programs.steam.enable = true;
+
     environment.sessionVariables = {
         LIBVA_DRIVER_NAME = "iHD";
     };

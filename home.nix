@@ -20,6 +20,7 @@
         bluetui
         btop
         cargo
+        cliphist
         eza
         fastfetch
         file-roller
@@ -41,6 +42,7 @@
         swaybg
         ungoogled-chromium
         waybar
+        wl-clipboard
         wl-mirror
         zathura
         zoxide
