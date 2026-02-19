@@ -44,6 +44,7 @@
         waybar
         wl-clipboard
         wl-mirror
+        wlsunset
         zathura
         zoxide
     ];
