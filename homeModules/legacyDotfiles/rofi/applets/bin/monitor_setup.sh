@@ -39,6 +39,6 @@ case ${action_chosen} in
         ;;
     $option_4)
         kanshictl switch extend
-        exec ~/scripts/present.sh
+        exec present
         ;;
 esac
