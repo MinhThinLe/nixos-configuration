@@ -4,5 +4,6 @@
         ./graphics.nix
         ./i18n.nix
         ./services.nix
+        ./style.nix
     ];
 }

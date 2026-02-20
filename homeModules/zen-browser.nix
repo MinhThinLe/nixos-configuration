@@ -13,6 +13,8 @@
     options.zen-browser.enable = lib.mkEnableOption "zen-browser";
 
     config = lib.mkIf config.zen-browser.enable {
+        programs.zen-browser.enable = true;
+
         programs.zen-browser.policies = {
             AutofillAddressEnabled = true;
             AutofillCreditCardEnabled = false;

@@ -16,13 +16,11 @@
         bluetui
         btop
         cargo
-        cliphist
         eza
         fastfetch
         file-roller
         gcc
         gimp
-        git
         hypridle
         hyprlock
         kanshi
@@ -33,21 +31,17 @@
         unrar
         pwvucontrol
         ripgrep
-        rofi
-        rofi-calc
         starship
         swaybg
         ungoogled-chromium
         waybar
-        wl-clipboard
-        wl-mirror
-        wlsunset
         zathura
         zoxide
     ];
 
     zen-browser.enable = true;
     foot.enable = true;
+    rofi.enable = true;
 
     programs.git = {
         enable = true;

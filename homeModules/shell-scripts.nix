@@ -1,8 +1,15 @@
 { config, pkgs, ... }:
 {
     home.packages = with pkgs; [
+
+        cliphist
+        wl-clipboard
         (writeShellScriptBin "clipboard-manager" (builtins.readFile ./shellScripts/clipboard-manager.sh))
+
+        wlsunset
         (writeShellScriptBin "nightlight" (builtins.readFile ./shellScripts/nightlight.sh))
+
+        wl-mirror
         (writeShellScriptBin "present" (builtins.readFile ./shellScripts/present.sh))
     ];
 
