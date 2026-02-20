@@ -1,5 +1,4 @@
 {
-    inputs,
     pkgs,
     ...
 }:
@@ -9,11 +8,7 @@
     home.homeDirectory = "/home/t0ast";
 
     imports = [
-        inputs.zen-browser.homeModules.beta
-        ./homeModules/zen-browser.nix
-        ./homeModules/legacy-dotfiles.nix
-        ./homeModules/foot.nix
-        ./homeModules/shell-scripts.nix
+        ./homeModules
     ];
 
     home.packages = with pkgs; [
@@ -51,6 +46,9 @@
         zoxide
     ];
 
+    zen-browser.enable = true;
+    foot.enable = true;
+
     programs.git = {
         enable = true;
         settings = {
@@ -58,24 +56,6 @@
                 email = "minhthinle69@gmail.com";
                 name = "T0ast";
             };
-        };
-    };
-
-    xdg.desktopEntries = {
-        zen-browser-uni = {
-            name = "Zen Browser (University profile)";
-            genericName = "Web browser";
-            exec = "zen-beta -P University";
-            icon = "zen-browser";
-            terminal = false;
-            categories = [
-                "Network"
-                "WebBrowser"
-            ];
-            mimeType = [
-                "text/html"
-                "text/xml"
-            ];
         };
     };
 
