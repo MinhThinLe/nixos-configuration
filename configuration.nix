@@ -195,8 +195,6 @@
         "flakes"
     ];
 
-    nix.nixPath = [ "/home/t0ast/nixos-configuration" ];
-
     services.xserver.videoDrivers = [ "modesetting" ];
 
     hardware.graphics = {
