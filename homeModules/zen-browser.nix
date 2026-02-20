@@ -50,6 +50,7 @@
 
     programs.zen-browser.profiles."default".settings = {
         "browser.aboutConfig.showWarning" = false;
+        "browser.translations.neverTranslateLanguages" = "vi";
         "extensions.autoDisableScopes" = 0;
         "extensions.pocket.enabled" = false;
         "sidebar.visibility" = "hide-sidebar";
