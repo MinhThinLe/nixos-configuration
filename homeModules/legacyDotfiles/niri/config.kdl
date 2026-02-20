@@ -265,7 +265,7 @@ layout {
 spawn-at-startup "fcitx5" "-d"
 spawn-at-startup "kdeconnectd"
 spawn-at-startup "kdeconnect-indicator"
-spawn-at-startup "~/scripts/nightlight.sh"
+spawn-at-startup "nightlight"
 spawn-sh-at-startup "wl-paste --watch cliphist store"
 // spawn-sh-at-startup "rclone mount --vfs-cache-mode writes --dir-cache-time 5s copyparty: ~/copyparty"
 

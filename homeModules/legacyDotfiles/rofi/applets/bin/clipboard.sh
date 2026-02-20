@@ -3,7 +3,7 @@ theme='style-5'
 
 rofi \
     -theme ${dir}/${theme}.rasi \
-    -modi clipboard:$HOME/scripts/cliphist.sh \
+    -modi clipboard:clipboard-manager \
     -show clipboard
 
 # cliphist list |\

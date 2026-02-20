@@ -13,6 +13,7 @@
         ./homeModules/zen-browser.nix
         ./homeModules/legacy-dotfiles.nix
         ./homeModules/foot.nix
+        ./homeModules/shell-scripts.nix
     ];
 
     home.packages = with pkgs; [
