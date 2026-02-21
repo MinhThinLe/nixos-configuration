@@ -50,5 +50,16 @@
 
     services.kdeconnect.enable = true;
 
+    xdg.userDirs = {
+        enable = true;
+        desktop = "$HOME/Desktop";
+        documents = "$HOME/Documents";
+        download = "$HOME/Downloads";
+        pictures = "$HOME/Pictures";
+        music = "$HOME/Music";
+        videos = "$HOME/Videos";
+        publicShare = "$HOME/Public";
+    };
+
     home.stateVersion = "25.11";
 }
