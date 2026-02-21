@@ -14,6 +14,7 @@
     home.packages = with pkgs; [
         bat
         bluetui
+        brightnessctl
         btop
         cargo
         eza
@@ -26,8 +27,8 @@
         kanshi
         mako
         nautilus
-        networkmanagerapplet
         networkmanager_dmenu
+        networkmanagerapplet
         pavucontrol
         ripgrep
         starship
