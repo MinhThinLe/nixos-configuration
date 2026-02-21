@@ -15,9 +15,9 @@
 
             character = {
                 disabled = false;
-                success_symbol = "[➜ ](bold green)";
-                error_symbol = "[✗ ](bold red)";
-                vicmd_symbol = "[vi](bold green)";
+                success_symbol = "[➜](bold green)";
+                error_symbol = "[✗](bold red)";
+                vicmd_symbol = "[N](bold green)";
                 format = "$symbol ";
             };
 
