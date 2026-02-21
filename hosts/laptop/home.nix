@@ -44,6 +44,7 @@
     zen-browser.enable = true;
     foot.enable = true;
     rofi.enable = true;
+    starship.enable = true;
 
     programs.git = {
         enable = true;
