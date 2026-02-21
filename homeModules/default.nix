@@ -2,6 +2,7 @@
 {
     imports = [
         ./foot.nix
+        ./git.nix
         ./legacy-dotfiles.nix
         ./rofi.nix
         ./shell-scripts.nix

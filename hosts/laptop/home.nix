@@ -44,16 +44,7 @@
     foot.enable = true;
     rofi.enable = true;
     starship.enable = true;
-
-    programs.git = {
-        enable = true;
-        settings = {
-            user = {
-                email = "minhthinle69@gmail.com";
-                name = "T0ast";
-            };
-        };
-    };
+    git.enable = true;
 
     programs.mangohud.enable = true;
 
