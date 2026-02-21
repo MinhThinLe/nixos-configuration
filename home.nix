@@ -28,12 +28,13 @@
         nautilus
         networkmanagerapplet
         networkmanager_dmenu
-        unrar
         pwvucontrol
         ripgrep
         starship
         swaybg
+        tree
         ungoogled-chromium
+        unrar
         waybar
         zathura
         zoxide
