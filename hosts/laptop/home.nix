@@ -31,7 +31,6 @@
         networkmanagerapplet
         pavucontrol
         ripgrep
-        starship
         swaybg
         tree
         ungoogled-chromium
