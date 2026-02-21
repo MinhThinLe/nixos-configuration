@@ -39,13 +39,13 @@
                 system = "x86_64-linux";
                 specialArgs = inputs;
                 modules = [
-                    ./system.nix
+                    ./hosts/laptop/configuration.nix
                     home-manager.nixosModules.home-manager
                     {
                         home-manager.extraSpecialArgs = { inherit inputs self; };
                         home-manager.useGlobalPkgs = true;
                         home-manager.useUserPackages = true;
-                        home-manager.users.t0ast = import ./home.nix;
+                        home-manager.users.t0ast = import ./hosts/laptop/home.nix;
                     }
                     stylix.nixosModules.stylix
                 ];

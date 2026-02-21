@@ -8,7 +8,7 @@
     home.homeDirectory = "/home/t0ast";
 
     imports = [
-        ./homeModules
+        ./../../homeModules
     ];
 
     home.packages = with pkgs; [

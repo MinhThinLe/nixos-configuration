@@ -6,8 +6,8 @@
 
 {
     imports = [
-        ./hosts/laptop/hardware-configuration.nix
-        ./nixosModules
+        ./hardware-configuration.nix
+        ./../../nixosModules
     ];
 
     networking.hostName = "t0ast-nix";
