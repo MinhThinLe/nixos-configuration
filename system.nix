@@ -35,8 +35,9 @@
     };
 
     environment.systemPackages = with pkgs; [
-        xwayland-satellite
         niri
+        sof-firmware
+        xwayland-satellite
     ];
 
     fonts.packages = with pkgs; [

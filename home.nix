@@ -28,7 +28,7 @@
         nautilus
         networkmanagerapplet
         networkmanager_dmenu
-        pwvucontrol
+        pavucontrol
         ripgrep
         starship
         swaybg
