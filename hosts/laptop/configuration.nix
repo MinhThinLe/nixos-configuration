@@ -22,6 +22,7 @@
         ];
         allowedUDPPortRanges = allowedTCPPortRanges;
     };
+    networking.wireguard.enable = true;
 
     users.users.t0ast = {
         isNormalUser = true;
