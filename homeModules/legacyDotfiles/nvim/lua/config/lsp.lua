@@ -42,3 +42,22 @@ end
 vim.diagnostic.config({
     virtual_text = true,
 })
+
+vim.lsp.config("*", {
+    root_marker = { ".git" }
+})
+
+vim.lsp.config.rust_analyzer = {
+    cmd = { "rust-analyzer" },
+    root_markers = { "Cargo.toml", "Cargo.lock" },
+    filetypes = { "rust" }
+}
+
+vim.lsp.config.asm_lsp = {
+    cmd = { "asm-lsp" },
+    root_markers = { ".asl-lsp.toml" },
+    filetypes = { "asm" }
+}
+
+vim.lsp.enable("rust_analyzer")
+vim.lsp.enable("asm_lsp")
