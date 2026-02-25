@@ -15,8 +15,4 @@
         recursive = true;
         executable = true;
     };
-
-    home.file.".zshrc" = {
-        source = ./legacyDotfiles/.zshrc;
-    };
 }
