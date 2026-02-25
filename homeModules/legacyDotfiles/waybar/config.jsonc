@@ -107,7 +107,7 @@
     "bluetooth": {
         "format": "󰂯 {status}",
         "format-disabled": "󰂲",
-        "format-connected": " {device_battery_percentage}%"
+        "format-connected": "󰥈 {device_battery_percentage}%"
     },
 
     "idle_inhibitor": {

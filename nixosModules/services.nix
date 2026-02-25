@@ -70,4 +70,6 @@
             };
         };
     };
+
+    hardware.bluetooth.enable = true;
 }
