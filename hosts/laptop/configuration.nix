@@ -12,16 +12,6 @@
 
     networking.hostName = "t0ast-nix";
     networking.networkmanager.enable = true;
-    # Poking a hole in the firewall for kdeconnect
-    networking.firewall = rec {
-        allowedTCPPortRanges = [
-            {
-                from = 1714;
-                to = 1764;
-            }
-        ];
-        allowedUDPPortRanges = allowedTCPPortRanges;
-    };
     networking.wireguard.enable = true;
 
     users.users.t0ast = {
