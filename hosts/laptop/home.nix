@@ -32,7 +32,9 @@
         pavucontrol
         ripgrep
         swaybg
+        tinymist
         tree
+        typst
         ungoogled-chromium
         unrar
         waybar
@@ -45,6 +47,7 @@
     rofi.enable = true;
     starship.enable = true;
     git.enable = true;
+    clipboard.enable = true;
 
     programs.mangohud.enable = true;
 

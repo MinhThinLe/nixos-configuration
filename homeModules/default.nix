@@ -1,6 +1,7 @@
 { ... }:
 {
     imports = [
+        ./clipboard-manager.nix
         ./foot.nix
         ./git.nix
         ./legacy-dotfiles.nix

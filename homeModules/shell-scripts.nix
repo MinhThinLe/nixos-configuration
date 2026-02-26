@@ -1,14 +1,6 @@
 { config, pkgs, ... }:
 {
     home.packages = with pkgs; [
-        (writeShellScriptBin "clipboard-manager" ''
-            if [ -z "$1" ]; then
-                ${pkgs.cliphist}/bin/cliphist list
-            else
-                ${pkgs.cliphist}/bin/cliphist decode <<<"$1" | ${pkgs.wl-clipboard}/wl-copy
-            fi
-        '')
-
         (writeShellScriptBin "nightlight" ''
             ${pkgs.wlsunset}/bin/wlsunset \
                 -t 3500 \
