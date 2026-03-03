@@ -19,14 +19,12 @@
         cargo
         eza
         fastfetch
-        file-roller
         gcc
         gimp
         hypridle
         hyprlock
         kanshi
         mako
-        nautilus
         networkmanager_dmenu
         networkmanagerapplet
         pavucontrol
