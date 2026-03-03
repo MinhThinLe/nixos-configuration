@@ -48,6 +48,7 @@
     starship.enable = true;
     git.enable = true;
     clipboard.enable = true;
+    dolphin.enable = true;
 
     programs.mangohud.enable = true;
 

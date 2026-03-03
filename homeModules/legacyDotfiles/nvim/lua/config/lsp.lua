@@ -59,5 +59,11 @@ vim.lsp.config.asm_lsp = {
     filetypes = { "asm" }
 }
 
+vim.lsp.config.tinymist = {
+    cmd = { "tinymist" },
+    filetypes = { "typst" },
+}
+
 vim.lsp.enable("rust_analyzer")
 vim.lsp.enable("asm_lsp")
+vim.lsp.enable("tinymist")

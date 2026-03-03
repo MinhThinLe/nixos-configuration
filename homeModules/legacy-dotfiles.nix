@@ -5,6 +5,19 @@
         recursive = true;
     };
 
+    home.file."${config.xdg.configHome}/kdeglobals" = {
+        text = ''
+            [Icons]
+            Theme=Fluent-dark
+
+            [KDE]
+            widgetStyle=qt6ct-style
+
+            [UiSettings]
+            ColorScheme=kvantum
+        '';
+    };
+
     home.file."${config.xdg.configHome}/rofi/launchers/type-1/launcher.sh" = {
         source = ./legacyDotfiles/rofi/launchers/type-1/launcher.sh;
         executable = true;

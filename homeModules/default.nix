@@ -2,6 +2,7 @@
 {
     imports = [
         ./clipboard-manager.nix
+        ./dolphin.nix
         ./foot.nix
         ./git.nix
         ./legacy-dotfiles.nix
