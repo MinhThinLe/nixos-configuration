@@ -16,10 +16,8 @@
         bluetui
         brightnessctl
         btop
-        cargo
         eza
         fastfetch
-        gcc
         gimp
         hypridle
         hyprlock
