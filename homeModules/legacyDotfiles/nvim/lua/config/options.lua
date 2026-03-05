@@ -16,6 +16,8 @@ vim.opt.splitright = true
 
 vim.cmd("language en_US.utf8")
 
+vim.opt.shell = "zsh"
+
 vim.api.nvim_create_autocmd('FileType', {
     pattern = { 'markdown' },
     callback = function() vim.treesitter.start() end,
