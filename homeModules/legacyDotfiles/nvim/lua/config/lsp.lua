@@ -64,6 +64,13 @@ vim.lsp.config.tinymist = {
     filetypes = { "typst" },
 }
 
+vim.lsp.config.jdtls = {
+    cmd = { "jdtls" },
+    -- root_markers = { "Cargo.toml", "Cargo.lock" },
+    filetypes = { "java" }
+}
+
 vim.lsp.enable("rust_analyzer")
 vim.lsp.enable("asm_lsp")
 vim.lsp.enable("tinymist")
+vim.lsp.enable("jdtls")
