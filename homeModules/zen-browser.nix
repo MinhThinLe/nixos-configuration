@@ -77,8 +77,6 @@
             "University"
         ];
 
-        programs.zen-browser.suppressXdgMigrationWarning = true;
-
         xdg.desktopEntries = {
             zen-browser-uni = {
                 name = "Zen Browser (University profile)";

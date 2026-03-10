@@ -13,9 +13,8 @@
         programs.foot =
             let
                 foot-theme = pkgs.fetchurl {
-                    # Because the one from the official repository wouldn't work
-                    url = "https://codeberg.org/birger/foot/raw/branch/master/themes/gruvbox-dark";
-                    hash = "sha256-7e3Vwv2TDVsBk7/z5wX8nhWS6VgV5xqnLoCeq/I7QDM=";
+                    url = "https://codeberg.org/dnkl/foot/raw/branch/master/themes/gruvbox-dark";
+                    hash = "sha256-hlmLklG/vAEDy8I+k13+o4ZR6Cq6lTxOconjf9M75eo=";
                 };
             in
             {
