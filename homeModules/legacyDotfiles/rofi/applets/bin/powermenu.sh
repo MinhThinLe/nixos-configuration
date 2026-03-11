@@ -11,7 +11,7 @@ theme="$type/$style"
 
 # Theme Elements
 prompt="`hostname`"
-mesg="Uptime: `uptime | sed 's/^.*up\s*//' | sed 's/,.*//g' | sed 's/:/ hours and /'` minutes"
+mesg="Uptime: `uptime | sed 's/^.*up\s*//' | sed 's/,.*//g' | sed 's/:/ hours /' | tr -s '[:space:]'` minutes"
 
 if [[ ( "$theme" == *'type-1'* ) || ( "$theme" == *'type-3'* ) || ( "$theme" == *'type-5'* ) ]]; then
 	list_col='1'
