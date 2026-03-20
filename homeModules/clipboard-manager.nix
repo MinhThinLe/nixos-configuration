@@ -20,18 +20,5 @@
                 fi
             '')
         ];
-
-        systemd.user.services."clipboard-manager" = {
-            Unit = {
-                Description = "A clipboard manager daemon";
-            };
-            Install = {
-                WantedBy = [ "default.target" ];
-            };
-            Service = {
-                Type = "simple";
-                ExecStart = "${pkgs.wl-clipboard}/bin/wl-paste --watch ${pkgs.cliphist}/bin/cliphist store";
-            };
-        };
     };
 }
