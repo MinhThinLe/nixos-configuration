@@ -27,7 +27,6 @@
 
     environment.systemPackages = with pkgs; [
         niri
-        sof-firmware
         xwayland-satellite
     ];
 
