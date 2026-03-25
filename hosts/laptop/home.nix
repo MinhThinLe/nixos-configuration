@@ -23,6 +23,7 @@
         hyprlock
         kanshi
         mako
+        mpv
         networkmanager_dmenu
         networkmanagerapplet
         pavucontrol
