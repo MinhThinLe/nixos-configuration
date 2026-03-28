@@ -1,0 +1,11 @@
+# Set to true to use lowercase keywords instead of uppercase.
+lowercaseKeywords: true
+connections:
+  - alias: main
+    driver: postgresql
+    user: t0ast
+    passwd: database_password_real
+    proto: tcp
+    host: 127.0.0.1
+    port: 5432
+    dbName: students
