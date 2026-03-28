@@ -2,7 +2,7 @@ vim.opt_local.expandtab = false
 
 vim.lsp.config.asm_lsp = {
     cmd = { "asm-lsp" },
-    root_markers = { ".asl-lsp.toml" },
+    root_markers = { ".asm-lsp.toml" },
     filetypes = { "asm" }
 }
 
