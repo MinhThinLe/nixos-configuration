@@ -46,36 +46,3 @@ vim.diagnostic.config({
 vim.lsp.config("*", {
     root_marker = { ".git" }
 })
-
-vim.lsp.config.rust_analyzer = {
-    cmd = { "rust-analyzer" },
-    root_markers = { "Cargo.toml", "Cargo.lock" },
-    filetypes = { "rust" }
-}
-
-vim.lsp.config.asm_lsp = {
-    cmd = { "asm-lsp" },
-    root_markers = { ".asl-lsp.toml" },
-    filetypes = { "asm" }
-}
-
-vim.lsp.config.tinymist = {
-    cmd = { "tinymist" },
-    filetypes = { "typst" },
-}
-
-vim.lsp.config.jdtls = {
-    cmd = { "jdtls" },
-    filetypes = { "java" }
-}
-
-vim.lsp.config.sqls = {
-    cmd = { "sqls" },
-    filetypes = { "sql" }
-}
-
-vim.lsp.enable("rust_analyzer")
-vim.lsp.enable("asm_lsp")
-vim.lsp.enable("tinymist")
-vim.lsp.enable("jdtls")
-vim.lsp.enable("sqls")
