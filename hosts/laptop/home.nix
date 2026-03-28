@@ -52,6 +52,8 @@
     services.kdeconnect.enable = true;
 
     xdg.userDirs = {
+        createDirectories = true;
+        setSessionVariables = true;
         enable = true;
         desktop = "$HOME/Desktop";
         documents = "$HOME/Documents";
@@ -61,6 +63,8 @@
         videos = "$HOME/Videos";
         publicShare = "$HOME/Public";
     };
+
+    gtk.gtk4.theme = null;
 
     home.stateVersion = "25.11";
 }
