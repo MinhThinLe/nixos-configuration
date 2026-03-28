@@ -71,6 +71,9 @@
         };
     };
 
+    zramSwap.enable = true;
+    systemd.oomd.enable = true;
+
     hardware.bluetooth.enable = true;
 
     programs.kdeconnect.enable = true;
