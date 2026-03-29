@@ -19,6 +19,7 @@
         eza
         fastfetch
         gimp
+        gpu-screen-recorder-gtk
         hypridle
         hyprlock
         kanshi
