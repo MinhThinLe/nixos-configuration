@@ -5,5 +5,9 @@ vim.lsp.config.asm_lsp = {
     root_markers = { ".asm-lsp.toml" },
     filetypes = { "asm" }
 }
-
 vim.lsp.enable("asm_lsp")
+
+require('nvim-treesitter').install({
+    'asm'
+})
+vim.treesitter.start()

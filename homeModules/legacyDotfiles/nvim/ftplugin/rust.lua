@@ -3,5 +3,9 @@ vim.lsp.config.rust_analyzer = {
     root_markers = { "Cargo.toml", "Cargo.lock" },
     filetypes = { "rust" }
 }
-
 vim.lsp.enable("rust_analyzer")
+
+require('nvim-tree').install({
+    'rust'
+})
+vim.treesitter.start()
