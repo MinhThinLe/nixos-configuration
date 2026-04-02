@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
     services = {
         getty.autologinOnce = true;
@@ -60,10 +60,10 @@
             common = {
                 default = [ "gtk" ];
             };
-            niri = {
+            niri = lib.mkForce {
                 default = [
-                    "gnome"
                     "gtk"
+                    "gnome"
                 ];
                 "org.freedesktop.impl.portal.ScreenCast" = [ "gnome" ];
                 "org.freedesktop.impl.portal.Screenshot" = [ "gnome" ];

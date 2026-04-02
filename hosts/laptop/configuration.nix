@@ -28,7 +28,13 @@
     environment.systemPackages = with pkgs; [
         niri
         xwayland-satellite
+        distrobox
     ];
+
+    virtualisation.podman = {
+        enable = true;
+        dockerCompat = true;
+    };
 
     fonts.packages = with pkgs; [
         icomoon-feather
@@ -37,11 +43,11 @@
         noto-fonts-color-emoji
     ];
 
-    environment.variables = {
-        XDG_CURRENT_DESKTOP = "niri";
-        XDG_SESSION_TYPE = "wayland";
-        XDG_SESSION_DESKTOP = "niri";
-    };
+    # environment.variables = {
+    #     XDG_CURRENT_DESKTOP = "niri";
+    #     XDG_SESSION_TYPE = "wayland";
+    #     XDG_SESSION_DESKTOP = "niri";
+    # };
 
     programs.neovim = {
         enable = true;
