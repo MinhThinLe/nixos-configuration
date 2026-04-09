@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
     home.packages = with pkgs; [
         (writeShellScriptBin "nightlight" ''
@@ -22,6 +22,10 @@
             popd
         '')
 
+        (writeShellScriptBin "prettify-table" ''
+            tr -s \" \" | column -t -s '|' -o '|'
+        '')
+
     ];
 
     home.file.".zprofile".text = ''
@@ -29,9 +33,4 @@
             exec niri-session -l
         fi
     '';
-
-    home.file."${config.xdg.dataHome}/nvim/mason/bin/prettify-table" = {
-        text = "tr -s \" \" | column -t -s '|' -o '|'";
-        executable = true;
-    };
 }
