@@ -10,5 +10,6 @@
         asm-lsp
         postgresql
         nil
+        nixfmt
     ];
 }
