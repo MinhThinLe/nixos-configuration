@@ -32,5 +32,5 @@ vim.diagnostic.config({
 })
 
 vim.lsp.config("*", {
-    root_marker = { ".git" }
+    root_markers = { ".git" }
 })

@@ -1,5 +1,6 @@
 vim.lsp.config.jdtls = {
     cmd = { "jdtls" },
+    root_markers = { "justfile", ".gitignore" },
     filetypes = { "java" }
 }
 vim.lsp.enable("jdtls")
