@@ -7,4 +7,5 @@ return {
     { 'nvim-telescope/telescope.nvim', version = '*', dependencies = { 'nvim-lua/plenary.nvim', } },
     { 'nvim-mini/mini.nvim', version = false },
     { 'nvim-tree/nvim-web-devicons' },
+    { 'mfussenegger/nvim-jdtls' }
 }
