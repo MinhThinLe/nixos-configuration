@@ -34,3 +34,4 @@ export EDITOR=nvim
 export PAGER='bat'
 export MANPAGER='bat -plman'
 export BAT_THEME="gruvbox-dark"
+export _JAVA_AWT_WM_NONREPARENTING=1
