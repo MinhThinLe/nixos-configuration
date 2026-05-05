@@ -44,6 +44,9 @@
 
                 WIFI_PWR_ON_AC = "on";
                 WIFI_PWR_ON_BAT = "on";
+
+                START_CHARGE_THRESH_BAT0=1;
+                STOP_CHARGE_THRESH_BAT0=1;
             };
         };
     };
