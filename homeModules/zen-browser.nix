@@ -38,10 +38,10 @@
             id = 0;
             isDefault = true;
             extensions.packages = with inputs.firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
-                bitwarden
                 clearurls
                 decentraleyes
                 facebook-container
+                keepassxc-browser
                 privacy-badger
                 ublock-origin
                 vimium
@@ -52,8 +52,8 @@
             id = 1;
             isDefault = false;
             extensions.packages = with inputs.firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
+                keepassxc-browser
                 ublock-origin
-                bitwarden
                 vimium
             ];
         };
