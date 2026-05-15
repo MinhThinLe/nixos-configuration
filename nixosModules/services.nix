@@ -20,7 +20,6 @@
         libinput.enable = true;
 
         gvfs.enable = true;
-        gnome.gnome-keyring.enable = true;
 
         tlp = {
             enable = true;
