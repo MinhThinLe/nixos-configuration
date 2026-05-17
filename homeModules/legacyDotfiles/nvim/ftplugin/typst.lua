@@ -8,3 +8,5 @@ require('nvim-treesitter').install({
     'typst'
 })
 vim.treesitter.start()
+
+vim.opt.wrap = true;
