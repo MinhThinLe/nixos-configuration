@@ -16,7 +16,7 @@ in
                 };
                 folders = {
                     "Synced" = {
-                        path = "/home/stuff/synced";
+                        path = "/home/t0ast/stuff/synced";
                     };
                 };
             };

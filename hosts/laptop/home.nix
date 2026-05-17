@@ -47,6 +47,7 @@
     git.enable = true;
     clipboard.enable = true;
     dolphin.enable = true;
+    syncthing-service.enable = true;
 
     programs.mangohud.enable = true;
 
