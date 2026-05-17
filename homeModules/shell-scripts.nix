@@ -17,7 +17,7 @@
         '')
 
         (writeShellScriptBin "note" ''
-            pushd /home/t0ast/stuff/notes
+            pushd /home/t0ast/stuff/synced/notes
             ${pkgs.neovim}/bin/nvim index.md
             popd
         '')
