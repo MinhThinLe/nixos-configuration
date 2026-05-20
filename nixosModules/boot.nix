@@ -24,6 +24,7 @@
             "quiet"
             "udev.log_level=3"
             "systemd.show_status=auto"
+            "mem=8G"
         ];
         loader.timeout = 0;
     };
