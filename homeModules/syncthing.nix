@@ -14,11 +14,6 @@ in
                         id = container_id;
                     };
                 };
-                folders = {
-                    "Synced" = {
-                        path = "/home/t0ast/stuff/synced";
-                    };
-                };
             };
         };
     };
