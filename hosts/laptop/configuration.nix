@@ -67,6 +67,12 @@
         "flakes"
     ];
 
+    nix.gc = {
+        automatic = true;
+        options = "--delete-older-than 10d";
+        dates = "daily";
+    };
+
     programs.nix-ld = {
         enable = true;
         libraries = [
