@@ -70,7 +70,7 @@
     nix.gc = {
         automatic = true;
         options = "--delete-older-than 10d";
-        dates = "daily";
+        dates = "weekly";
     };
 
     programs.nix-ld = {
