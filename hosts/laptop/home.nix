@@ -16,6 +16,7 @@
         bluetui
         brightnessctl
         btop
+        dust
         eza
         fastfetch
         gimp
@@ -65,8 +66,6 @@
         videos = "$HOME/Videos";
         publicShare = "$HOME/Public";
     };
-
-    gtk.gtk4.theme = null;
 
     home.stateVersion = "25.11";
 }
