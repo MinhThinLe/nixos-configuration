@@ -5,7 +5,7 @@ vim.lsp.config.rust_analyzer = {
 }
 vim.lsp.enable("rust_analyzer")
 
-require('nvim-tree').install({
+require('nvim-treesitter').install({
     'rust'
 })
 vim.treesitter.start()
