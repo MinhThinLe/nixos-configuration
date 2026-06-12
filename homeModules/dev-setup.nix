@@ -13,5 +13,6 @@
         postgresql
         rars
         rustup
+        tree-sitter
     ];
 }
