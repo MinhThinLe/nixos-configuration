@@ -360,7 +360,7 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+Return hotkey-overlay-title="Open a Terminal" { spawn "foot"; }
+    Mod+Return hotkey-overlay-title="Open a Terminal" { spawn "footclient"; }
 
     Mod+D hotkey-overlay-title="Launch apps" { spawn "~/.config/rofi/launchers/type-1/launcher.sh"; }
     Mod+P hotkey-overlay-title="Launch powermenu" { spawn "~/.config/rofi/applets/bin/powermenu.sh"; }
