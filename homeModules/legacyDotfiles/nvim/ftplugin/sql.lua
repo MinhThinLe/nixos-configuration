@@ -1,6 +1,7 @@
 vim.lsp.config.sqls = {
     cmd = { "sqls" },
-    filetypes = { "sql" }
+    filetypes = { "sql" },
+    root_markers = { "flake.nix" }
 }
 vim.lsp.enable("sqls")
 

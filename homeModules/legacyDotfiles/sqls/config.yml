@@ -8,4 +8,4 @@ connections:
     proto: tcp
     host: 127.0.0.1
     port: 5432
-    dbName: students
+    dbName: database
