@@ -28,13 +28,7 @@
     environment.systemPackages = with pkgs; [
         niri
         xwayland-satellite
-        distrobox
     ];
-
-    virtualisation.podman = {
-        enable = true;
-        dockerCompat = true;
-    };
 
     fonts.packages = with pkgs; [
         icomoon-feather
