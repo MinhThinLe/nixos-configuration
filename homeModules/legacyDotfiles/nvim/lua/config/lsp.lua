@@ -4,7 +4,7 @@ local cmp = require('cmp')
 cmp.setup({
     sources = {
         { name = 'nvim_lsp' },
-        { name = 'luasnip' }
+        { name = 'mini_snippets' }
     },
     mapping = {
         ['<CR>'] = cmp.mapping.confirm({ select = false }),

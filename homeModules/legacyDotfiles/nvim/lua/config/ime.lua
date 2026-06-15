@@ -1,9 +1,10 @@
 local should_reenable_fcitx = false
+local FCITX_ACTIVE = 2
 
 local function is_fcitx_active()
     local output = io.popen("fcitx5-remote")
     -- Because the command above returns 2 if fcitx is active and 2 if it isn`t
-    return tonumber(output:read("*all")) == 2
+    return tonumber(output:read("*all")) == FCITX_ACTIVE
 end
 
 vim.api.nvim_create_autocmd("InsertLeave", {
