@@ -37,6 +37,7 @@
         ungoogled-chromium
         unrar
         waybar
+        xdg-utils
         zathura
         zoxide
     ];
