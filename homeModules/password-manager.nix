@@ -1,7 +1,6 @@
 { ... }:
 {
     programs.keepassxc = {
-        autostart = true;
         enable = true;
         settings = {
             General.ConfigVersion = 2;
