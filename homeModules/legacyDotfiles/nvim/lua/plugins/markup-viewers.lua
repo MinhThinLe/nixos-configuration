@@ -4,7 +4,7 @@ return {
         ft = 'typst',
         version = '1.*',
         opts = {
-            open_cmd = 'chromium-browser --new-window %s',
+            open_cmd = 'zen-beta --blank-window %s',
 
             dependencies_bin = {
                 ['tinymist'] = "tinymist",
