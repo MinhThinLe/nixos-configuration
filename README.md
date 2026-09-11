@@ -1,3 +1,5 @@
+Migrated to [Codeberg](https://codeberg.org/Burnt_T0ast/nixos-configuration)
+
 # My flake-based NixOS configuration
 
 To install it, do it like you would with any other flake-based config
